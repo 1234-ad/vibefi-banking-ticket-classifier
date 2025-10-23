@@ -1,0 +1,42 @@
+{
+  "name": "vibefi-banking-ticket-classifier",
+  "version": "1.0.0",
+  "description": "AI-powered banking support ticket classifier for VibeFI",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/ tests/",
+    "validate": "npm run lint && npm run test"
+  },
+  "keywords": [
+    "banking",
+    "ai",
+    "ticket-classification",
+    "vibefi",
+    "automation"
+  ],
+  "author": "Aditya Rastogi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.1",
+    "joi": "^17.11.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.1",
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
